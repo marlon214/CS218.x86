@@ -1,0 +1,22 @@
+
+bVar1		db	59
+bVar2		db	21
+bAns1		db	0
+bAns2		db	0
+wVar1		dw	2681
+wVar2		dw	1432
+wAns1		dw	0
+wAns2		dw	0
+dVar1		dd	164641512
+dVar2		dd	112356789
+dVar3		dd	-46524
+dAns1		dd	0
+dAns2		dd	0
+qVar1		dq	142455214619
+flt1		dd	-19.125
+flt2		dd	11.25
+eVal		dd	2.71828
+myClass		db	"CS-218", NULL
+saying		db	"Its not a bug, its a feature", NULL
+myName		db	"your name goes here", NULL
+

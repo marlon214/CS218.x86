@@ -1,0 +1,78 @@
+; --------------------------------------------------------------
+
+section	.data
+
+; -----
+;  Define constants.
+
+NULL		equ	0			; end of string
+
+TRUE		equ	1
+FALSE		equ	0
+
+EXIT_SUCCESS	equ	0			; successful operation
+SYS_exit	equ	60			; call code for terminate
+
+; -----
+;  Provided Data
+
+lengths		dd	 1355,  1037,  1123,  1024,  1453
+		dd	 1115,  1135,  1123,  1123,  1123
+		dd	 1254,  1454,  1152,  1164,  1542
+		dd	-1353,  1457,  1182, -1142,  1354
+		dd	 1364,  1134,  1154,  1344,  1142
+		dd	 1173, -1543, -1151,  1352, -1434
+		dd	 1134,  2134,  1156,  1134,  1142
+		dd	 1267,  1104,  1134,  1246,  1123
+		dd	 1134, -1161,  1176,  1157, -1142
+		dd	-1153,  1193,  1184,  1142
+
+widths		dw	  367,   316,   542,   240,   677
+		dw	  635,   426,   820,   146,  -333
+		dw	  317,  -115,   226,   140,   565
+		dw	  871,   614,   218,   313,   422	
+		dw	 -119,   215,  -525,  -712,   441
+		dw	 -622,  -731,  -729,   615,   724
+		dw	  217,  -224,   580,   147,   324
+		dw	  425,   816,   262,  -718,   192
+		dw	 -432,   235,   764,  -615,   310
+		dw	  765,   954,  -967,   515
+
+heights		db	   42,    21,    56,    27,    35
+		db	  -27,    82,    65,    55,    35
+		db	  -25,   -19,   -34,   -15,    67
+		db	   15,    61,    35,    56,    53
+  		db	  -32,    35,    64,    15,   -10
+		db	   65,    54,   -27,    15,    56
+		db	   92,   -25,    25,    12,    25
+		db	  -17,    98,   -77,    75,    34
+		db	   23,    83,   -73,    50,    15
+		db	   35,    25,    18,    13
+
+length		dd	49
+
+vMin		dd	0
+vEstMed		dd	0
+vMax		dd	0
+vSum		dd	0
+vAve		dd	0
+
+saMin		dd	0
+saEstMed	dd	0
+saMax		dd	0
+saSum		dd	0
+saAve		dd	0
+
+; -----
+; Additional variables (if any)
+
+
+
+; --------------------------------------------------------------
+; Uninitialized data
+
+section	.bss
+
+volumes		resd	49
+surfaceAreas	resd	49
+
